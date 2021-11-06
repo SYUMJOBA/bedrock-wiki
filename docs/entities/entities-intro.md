@@ -13,7 +13,7 @@ Confusing component groups with components is a widespread source of errors. Pay
 
 Components are logical building blocks that make up Minecraft entities. All components are written by Mojang and provided to us for use. Components can do all sorts of things, like set the size of an entity or give it the ability to swim. The complete list of components can be found [here](https://bedrock.dev/docs/stable/Entities).
 
-It is _impossible_ to create your own components. The entire list of components is hard-coded and provided by Microsoft.
+Components are hardcoded into the game engine provided by Microsoft, it is very hard to create your own but it is possible. There is little documentation about this, and I've seen this functionality only in the bridge software (a fully featured tool to create add-ons). This is a very advanced topic, but if you are interested you can take a glance at it [here](https://bridge-core.app/extension-docs/custom-components/).
 
 When you want to add behavior to your entity, you add `components` into the `components` object of the `minecraft:entity` object. For example, if we want to give the entity the ability to climb, we can do so by adding this component: `"minecraft:can_climb": {}`.
 
